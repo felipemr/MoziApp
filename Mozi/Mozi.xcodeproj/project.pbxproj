@@ -141,6 +141,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				36093B672B4C9FF900D88182 /* PBXTargetDependency */,
 			);
 			name = Mozi;
 			productName = Mozi;
@@ -215,6 +216,9 @@
 				Base,
 			);
 			mainGroup = 36093B2F2B4C674D00D88182;
+			packageReferences = (
+				36093B652B4C9FDE00D88182 /* XCRemoteSwiftPackageReference "SwiftLint" */,
+			);
 			productRefGroup = 36093B392B4C674D00D88182 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -291,6 +295,10 @@
 			isa = PBXTargetDependency;
 			target = 36093B372B4C674D00D88182 /* Mozi */;
 			targetProxy = 36093B532B4C674E00D88182 /* PBXContainerItemProxy */;
+		};
+		36093B672B4C9FF900D88182 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 36093B662B4C9FF900D88182 /* SwiftLintPlugin */;
 		};
 /* End PBXTargetDependency section */
 
@@ -424,6 +432,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Mozi/Preview Content\"";
 				DEVELOPMENT_TEAM = 9P64YE968V;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -453,6 +462,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Mozi/Preview Content\"";
 				DEVELOPMENT_TEAM = 9P64YE968V;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -588,6 +598,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		36093B652B4C9FDE00D88182 /* XCRemoteSwiftPackageReference "SwiftLint" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/SwiftLint";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.54.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		36093B662B4C9FF900D88182 /* SwiftLintPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 36093B652B4C9FDE00D88182 /* XCRemoteSwiftPackageReference "SwiftLint" */;
+			productName = "plugin:SwiftLintPlugin";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 36093B302B4C674D00D88182 /* Project object */;
 }
